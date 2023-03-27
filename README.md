@@ -69,6 +69,10 @@ Web App:
 https://sportsdash.com.au/
 Role: Senior Software Developer, Lead Test Engineer
 
+4. Desktop GUI Development for Image Processing Software 
+Company:
+https://www.evolveprime.com/
+
 
 II. Experience on Frameworks:
 Backend: Django, Django Rest Framework, PostgreSQL, API & Back-end Development, Nginx, uWSGI,  Celery, Redis
