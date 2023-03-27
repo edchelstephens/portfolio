@@ -2,7 +2,7 @@
 
 ![Profile](./images/screenshot.png)
 
-I am Edchel Stephen Nini, a Senior Python Django Lead Full Stack developer.
+## I am Edchel Stephen Nini, a Senior Python Django Lead Full Stack developer.
 
 I am experienced in Python, Django, Django REST Framework, PostgreSQL, with AngularJS and React JS full stack development on Linux platform with deployment experience in AWS, GCP.
 
