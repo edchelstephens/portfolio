@@ -44,8 +44,8 @@ https://drive.google.com/file/d/1FBy6MrZoEvCOq_eE2l_NIJ5ElSheYOGg/view
 
 Here's my experience portfolio:
 
-I. Projects:
-1. Learning Management System App:
+## I. Projects:
+### 1. Learning Management System App:
 Web App:
 https://www.yahshuadolo.com/
 Role: Lead Developer,  Fullstack development
@@ -54,7 +54,7 @@ Mobile Android App:
 https://play.google.com/store/apps/details?id=com.yahshua.yiasintelex
 Role: API Developer/Maintainer
 
-2. Payroll App:
+### 2. Payroll App:
 Web App:
 https://www.yahshuapayroll.com/
 Role: Lead Test Engineer/ Lead Code Reviewer/ API Developer/Maintainer
@@ -64,17 +64,17 @@ https://play.google.com/store/apps/details?id=com.yahshua.timekeeperusls
 https://play.google.com/store/apps/details?id=com.yahshua.dmpiapproval
 Role: API Developer/Maintainer
 
-3. Sports Management System App:
+### 3. Sports Management System App:
 Web App:
 https://sportsdash.com.au/
 Role: Senior Software Developer, Lead Test Engineer
 
-4. Desktop GUI Development for Image Processing Software 
+### 4. Desktop GUI Development for Image Processing Software 
 Company:
 https://www.evolveprime.com/
 
 
-II. Experience on Frameworks:
+## II. Experience on Frameworks:
 Backend: Django, Django Rest Framework, PostgreSQL, API & Back-end Development, Nginx, uWSGI,  Celery, Redis
 Frontend: AngularJS, ReactJS, VanillaJS, Twitter Bootstrap
 Cloud: AWS(EC2, Elastic Beanstalk, S3, RDS) GCP, Heroku, with cli, ssh, ftp skills
@@ -83,7 +83,7 @@ Tools: Ansible, Shell Scripting, Pre-commit, Github actions
 Code Control: git, github, bitbucket
 Development Style: Test Driven Development
 
-III. Profiles
+## III. Profiles
 Github:
 https://github.com/edchelstephens
 
