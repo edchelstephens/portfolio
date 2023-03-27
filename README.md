@@ -40,7 +40,7 @@ Experienced in Google Cloud Platform for integrating social logins to django app
 
 Here is a link to my resume which is also in the attachment:
 
-https://drive.google.com/file/d/1FBy6MrZoEvCOq_eE2l_NIJ5ElSheYOGg/view
+https://drive.google.com/file/d/1xbsildi7URxRcEsZNBUhKgSI8Vczskwr/
 
 Here's my experience portfolio:
 
