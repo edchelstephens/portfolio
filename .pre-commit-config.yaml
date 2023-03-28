@@ -26,7 +26,7 @@ repos:
     rev: 6.3.0
     hooks:
       - id: pydocstyle
-        args: ["--ignore=D100, D106, D203"]
+        args: ["--ignore=D100, D104, D106, D203, D205, D212, D213, D406, D407"]
         exclude: ^.*\b(migrations)\b.*$
 
   - repo: https://github.com/pycqa/flake8
