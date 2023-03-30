@@ -1,7 +1,6 @@
-from django.http import HttpResponse
-from django.shortcuts import render  # noqa
+from django.shortcuts import render
 
 
 def index(request):
     """Index page view."""
-    return HttpResponse("Pages index")
+    return render(request, "pages/index.html")
