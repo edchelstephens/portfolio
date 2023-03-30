@@ -5,5 +5,5 @@ from pages.views import page
 app_name = "pages"
 
 urlpatterns = [
-    path("", page.index, name="index"),
+    path("", page.IndexView.as_view(), name="index"),
 ]
