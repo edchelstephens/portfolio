@@ -17,9 +17,9 @@ From planning business model entities with business logic & constraints to
 structuring  ORM models and database table migrations with defined relationships.
 Creating secure APIs to process business transactions on active records.
 Experienced in front end development, presenting result data to the user using front-end web technologies: HTML & CSS(Bootstrap), JavaScript(AngularJS, React for Single Page Applications), HTMX,
-Django Template Language (and others that can be learned).  
+Django Template Language (and others that can be learned).
 Lead in configuring and creating automated tests using Test Driven Development,
-to ensure code works correctly and to maintain high production code quality.  
+to ensure code works correctly and to maintain high production code quality.
 With strong problem solving and debugging skills.
 
 
@@ -69,7 +69,7 @@ Web App:
 https://sportsdash.com.au/
 Role: Senior Software Developer, Lead Test Engineer
 
-### 4. Desktop GUI Development for Image Processing Software 
+### 4. Desktop GUI Development for Image Processing Software
 Company:
 https://www.evolveprime.com/
 
@@ -91,7 +91,41 @@ LinkedIn:
 https://www.linkedin.com/in/edchelstephens/
 
 
+## IV. Projects Worked With
+1. https://bellainstitute.com/
+    1.1 bellainstitute site
 
-## HTML copied from [w3schools](https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm)
+2. https://contentmaximiser.com/
+    2.1 contentmaximiser site
+    2.2 central coast orthodontics site
+    2.3 dental house site
+    2.4 new heights media site
+    2.5 dental botique
+    2.6 both ends of the lead site
+    2.7 mimi fong site
+    2.8 au ngl dashboard
 
+3. https://yahshuapayroll.com/
+    3.1 yahshua payroll site
+    3.2 yahshua timekeeper apis
+    3.4 yahshua kiosk apis
+    3.4 yahshua dmpi apis
+    3.5 Research and Training
+    3.6 Clean Code Training
+    3.7 Unit Test and Test Driven Development Training
 
+4. https://yahshuadolo.com/
+    4.1 yahshua dolo site
+    4.2 yahshua dolo mobile apis
+
+5. https://sportsdash.com.au/
+    5.1 sporstdash site
+    5.2 sportsdash mobile apis
+
+6. https://www.evolveprime.com/
+    6.1 Python Image Processing
+
+7. https://yeoki.be/
+    7.1 yeoki site
+    7.2 gem logic site
+    7.3 oneraria
