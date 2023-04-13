@@ -412,6 +412,13 @@
                                     );
                                 };
 
+                                const resetContactMeFields = () => {
+                                    $("#contact-me-name").val("");
+                                    $("#contact-me-email").val("");
+                                    $("#contact-me-subject").val("");
+                                    $("#contact-me-message").val("");
+                                }
+
                                 const getCookie = (name) => {
                                     let cookieValue = null;
                                     if (document.cookie && document.cookie !== '') {
@@ -455,10 +462,12 @@
                                         data: JSON.stringify(data),
                                         success: function( data, status, xhr){
                                             notifyEmailSucess();
+                                            resetContactMeFields();
 
                                         },
                                         error: function( request, status, errorThrown ){
                                             notifyEmailError();
+                                            resetContactMeFields();
 
                                         }
                                     })
