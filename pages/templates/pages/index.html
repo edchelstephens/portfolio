@@ -436,6 +436,8 @@
                                         "contact-me-message": $("#contact-me-message").val(),
                                     }
 
+
+
                                     $.ajaxSetup({
                                         beforeSend: function(xhr, settings) {
                                             xhr.setRequestHeader("X-CSRFToken", getCookie("csrftoken"))
@@ -443,7 +445,7 @@
                                     })
 
                                     $.ajax({
-                                        url: `email/`,
+                                        url: `contact-me-email/`,
                                         headers:{
                                             'X-CSRF-Token':'{{ csrf_token }}'
                                         },
