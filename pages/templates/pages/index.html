@@ -22,6 +22,8 @@
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
         <link rel="stylesheet"
               type="text/css"
               href="{% static 'pages/style.css' %}" />
@@ -330,8 +332,9 @@
                                 <br />
                                 <p>Let's get in touch. Send me a message:</p>
 
-                                <!-- TODO: Create view to handle form submission -->
-                                <form action="">
+
+                                <form method="POST" onsubmit="sendEmail()">
+                                    {% csrf_token %}
                                     <p>
                                         <input
                                             class="w3-input w3-padding-16"
@@ -372,6 +375,8 @@
                                         <button
                                             class="w3-button w3-light-grey w3-padding-large"
                                             type="submit"
+
+
                                         >
                                             <i class="fa fa-paper-plane"></i> SEND MESSAGE
                                         </button>
@@ -386,6 +391,7 @@
                                 </footer>
                             </div>
                             <script>
+
                                 const notifyEmailSucess = () => {
                                     Swal.fire(
                                         "Email Sent",
@@ -401,6 +407,29 @@
                                         "error"
                                     );
                                 };
+
+                                const sendEmail = () => {
+                                    $.ajaxSetup({
+                                        beforeSend: function(xhr, settings) {
+                                            xhr.setRequestHeader("X-CSRFToken", Cookies.get('csrftoken'))
+                                        }
+                                    })
+                                    $.ajax({
+                                        url: 'email/',
+                                        headers:{
+                                            'X-CSRF-Token':'{{ csrf_token }}'
+                                        },
+                                        dataType: 'json',
+                                        type: 'POST',
+                                        contentType: 'application/json; charset=utf-8',
+                                        success: function( data, status, xhr){
+                                            notifyEmailSucess();
+                                        },
+                                        error: function( request, status, errorThrown ){
+                                            notifyEmailError();
+                                        }
+                                    })
+                                }
 
                             </script>
                         </body>
