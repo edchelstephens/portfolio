@@ -19,6 +19,9 @@
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
         <link rel="stylesheet"
               type="text/css"
               href="{% static 'pages/style.css' %}" />
@@ -382,5 +385,23 @@
                                 <a href="https://www.linkedin.com/in/edchelstephens/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i>
                                 </footer>
                             </div>
+                            <script>
+                                const notifyEmailSucess = () => {
+                                    Swal.fire(
+                                        "Email Sent",
+                                        "Will get back to you shortly!",
+                                        "success"
+                                    );
+                                };
+
+                                const notifyEmailError = () => {
+                                    Swal.fire(
+                                        "Email Not Sent",
+                                        "Please try again later.",
+                                        "error"
+                                    );
+                                };
+
+                            </script>
                         </body>
                     </html>
