@@ -166,16 +166,16 @@ LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
     "handlers": {
-        "contact_me_email_handler": {
+        "contact": {
             "class": "logging.FileHandler",
             "filename": "contact.log",
             "level": "DEBUG",
         }
     },
     "loggers": {
-        "contact_me_email": {
+        "contact": {
             "level": "DEBUG",
-            "handlers": ["contact_me_email_handler"],
+            "handlers": ["contact"],
         }
     },
 }
