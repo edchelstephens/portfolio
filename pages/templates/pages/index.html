@@ -333,7 +333,7 @@
                                 <p>Let's get in touch. Send me a message:</p>
 
 
-                                <form method="POST" onsubmit="sendEmail()">
+                                <div>
                                     {% csrf_token %}
                                     <p>
                                         <input
@@ -342,6 +342,7 @@
                                             placeholder="Name"
                                             required
                                             name="Name"
+                                            id="contact-me-name"
                                         />
                                     </p>
                                     <p>
@@ -351,6 +352,7 @@
                                             placeholder="Email"
                                             required
                                             name="Email"
+                                            id="contact-me-email"
                                         />
                                     </p>
                                     <p>
@@ -360,6 +362,7 @@
                                             placeholder="Subject"
                                             required
                                             name="Subject"
+                                            id="contact-me-subject"
                                         />
                                     </p>
                                     <p>
@@ -369,19 +372,20 @@
                                             placeholder="Message"
                                             required
                                             name="Message"
+                                            id="contact-me-message"
                                         />
                                     </p>
                                     <p>
                                         <button
                                             class="w3-button w3-light-grey w3-padding-large"
                                             type="submit"
-
+                                            onClick="sendEmail()"
 
                                         >
                                             <i class="fa fa-paper-plane"></i> SEND MESSAGE
                                         </button>
                                     </p>
-                                </form>
+                                </div>
                             </div>
 
                             <!-- Footer -->
@@ -408,13 +412,33 @@
                                     );
                                 };
 
+                                const getCookie = (name) => {
+                                    let cookieValue = null;
+                                    if (document.cookie && document.cookie !== '') {
+                                        const cookies = document.cookie.split(';');
+                                        for (let i = 0; i < cookies.length; i++) {
+                                            const cookie = cookies[i].trim();
+
+                                            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                                                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    return cookieValue;
+                                }
+
                                 const sendEmail = () => {
                                     let data = {
-                                        "sport_preference_form_id": sport_preference_form_id,
+                                        "contact-me-name": $("#contact-me-name").val(),
+                                        "contact-me-email": $("#contact-me-email").val(),
+                                        "contact-me-subject": $("#contact-me-subject").val(),
+                                        "contact-me-message": $("#contact-me-message").val(),
                                     }
+
                                     $.ajaxSetup({
                                         beforeSend: function(xhr, settings) {
-                                            xhr.setRequestHeader("X-CSRFToken", Cookies.get("csrftoken"))
+                                            xhr.setRequestHeader("X-CSRFToken", getCookie("csrftoken"))
                                         }
                                     })
 
