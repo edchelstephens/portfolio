@@ -159,3 +159,23 @@ STATIC_ROOT = "staticfiles"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Logging
+# https://docs.djangoproject.com/en/4.1/howto/logging/#create-a-logging-dictionary
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "contact_me_email_handler": {
+            "class": "logging.FileHandler",
+            "filename": "contact.log",
+            "level": "DEBUG",
+        }
+    },
+    "loggers": {
+        "contact_me_email": {
+            "level": "DEBUG",
+            "handlers": ["contact_me_email_handler"],
+        }
+    },
+}

@@ -5,7 +5,7 @@ from django.utils import timezone
 from utils.exceptions import HumanReadableError
 from utils.views import RestAPIView
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("contact_me_email")
 
 
 class ContactMeEmailView(RestAPIView):
@@ -61,4 +61,4 @@ class ContactMeEmailView(RestAPIView):
             timezone.now(),
         )
 
-        logger.warning(email_message)
+        logger.info(email_message)
