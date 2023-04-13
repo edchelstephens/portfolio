@@ -419,6 +419,40 @@
                                     $("#contact-me-message").val("");
                                 }
 
+                                const isValidEmail = (email) => {
+                                    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+                                }
+
+                                const validateEmailData = (data) => {
+
+                                    let name = data["contact-me-name"]
+                                    let email = data["contact-me-email"];
+                                    let subject = data["contact-me-subject"];
+                                    let message = data["contact-me-message"];
+
+
+
+                                    let is_valid = false;
+                                    let validation_message = ""
+
+                                    if (!name) {
+                                        validation_message = "Name is required."
+                                    } else if (!email) {
+                                        validation_message = "Email is required."
+                                    } else if(!isValidEmail(email)) {
+                                        validation_message = "Email is invalid."
+                                    }
+                                    else if (!subject) {
+                                        validation_message = "Subject is required."
+                                    } else if (!message) {
+                                        validation_message = "Message is required."
+                                    } else {
+                                        is_valid = true;
+                                    }
+
+                                    return [is_valid, validation_message]
+                                }
+
                                 const getCookie = (name) => {
                                     let cookieValue = null;
                                     if (document.cookie && document.cookie !== '') {
@@ -436,6 +470,8 @@
                                 }
 
                                 const sendEmail = () => {
+
+
                                     let data = {
                                         "contact-me-name": $("#contact-me-name").val(),
                                         "contact-me-email": $("#contact-me-email").val(),
@@ -443,7 +479,16 @@
                                         "contact-me-message": $("#contact-me-message").val(),
                                     }
 
+                                    let [is_valid, validation_message] = validateEmailData(data);
 
+                                    if(!is_valid){
+                                        Swal.fire(
+                                            "Error",
+                                            validation_message,
+                                            "error"
+                                        );
+                                        return;
+                                    }
 
                                     $.ajaxSetup({
                                         beforeSend: function(xhr, settings) {
