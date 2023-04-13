@@ -409,24 +409,31 @@
                                 };
 
                                 const sendEmail = () => {
+                                    let data = {
+                                        "sport_preference_form_id": sport_preference_form_id,
+                                    }
                                     $.ajaxSetup({
                                         beforeSend: function(xhr, settings) {
-                                            xhr.setRequestHeader("X-CSRFToken", Cookies.get('csrftoken'))
+                                            xhr.setRequestHeader("X-CSRFToken", Cookies.get("csrftoken"))
                                         }
                                     })
+
                                     $.ajax({
-                                        url: 'email/',
+                                        url: `email/`,
                                         headers:{
                                             'X-CSRF-Token':'{{ csrf_token }}'
                                         },
                                         dataType: 'json',
                                         type: 'POST',
                                         contentType: 'application/json; charset=utf-8',
+                                        data: JSON.stringify(data),
                                         success: function( data, status, xhr){
                                             notifyEmailSucess();
+
                                         },
                                         error: function( request, status, errorThrown ){
                                             notifyEmailError();
+
                                         }
                                     })
                                 }
