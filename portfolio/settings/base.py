@@ -15,9 +15,9 @@ from pathlib import Path
 import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-ENV_FILE = BASE_DIR.parent / ".env"
+ENV_FILE = BASE_DIR / ".env"
 env = environ.Env()
 
 if Path(ENV_FILE).exists():
