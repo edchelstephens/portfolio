@@ -6,6 +6,8 @@ DEBUG = False
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")  # noqa
 
+ROOT_URLCONF = "portfolio.urls"
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
