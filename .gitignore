@@ -84,4 +84,4 @@ celerybeat-schedule
 
 # venv's
 projectenv/*
-portfolio/static/*
+static/*
