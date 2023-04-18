@@ -1,4 +1,4 @@
-from portfolio.settings.base import *  # noqa
+from .base import *  # noqa
 
 # Speeding up our tests
 # https://docs.djangoproject.com/en/4.1/topics/testing/overview/#speeding-up-the-tests

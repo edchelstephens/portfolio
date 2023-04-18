@@ -1,1 +1,1 @@
-from portfolio.settings.base import *  # noqa
+from .base import *  # noqa

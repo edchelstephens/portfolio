@@ -1,4 +1,4 @@
-from portfolio.settings.base import *  # noqa
+from .base import *  # noqa
 
 DEBUG = True
 ALLOWED_HOSTS = ["127.0.0.1"]
