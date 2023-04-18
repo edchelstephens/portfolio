@@ -1,7 +1,10 @@
+import os
+
 from portfolio.settings.base import *  # noqa
 
 DEBUG = False
 
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")  # noqa
 
 LOGGING = {
     "version": 1,
