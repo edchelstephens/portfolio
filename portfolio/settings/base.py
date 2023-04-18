@@ -94,7 +94,7 @@ DATABASES = {
 if env.bool("USES_POSTGRES_DB", False):
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.postgresql",
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
             "NAME": env.str("DJANGO_DB_NAME"),
             "USER": env.str("DJANGO_DB_USER"),
             "PASSWORD": env.str("DJANGO_DB_PASSWORD"),
