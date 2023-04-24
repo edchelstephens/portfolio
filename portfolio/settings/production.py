@@ -2,7 +2,7 @@ import os
 
 from .base import *  # noqa
 
-DEBUG = False
+DEBUG = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")  # noqa
 
