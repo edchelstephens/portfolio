@@ -84,5 +84,3 @@ celerybeat-schedule
 
 # venv's
 projectenv/*
-staticfiles/*
-mediafiles/*
