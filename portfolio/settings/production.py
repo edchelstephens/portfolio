@@ -5,7 +5,7 @@ from .base import *  # noqa
 DEBUG = False
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")  # noqa
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles/")  # noqa
 
 ROOT_URLCONF = "portfolio.urls"
 
