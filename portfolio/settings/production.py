@@ -1,11 +1,12 @@
 import os
 
 from .base import *  # noqa
+from .base import BASE_DIR, env
 
 DEBUG = False
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles/")  # noqa
+STATIC_ROOT = env.str("DJANGO_STATIC_ROOT", os.path.join(BASE_DIR, "staticfiles/"))
 
 ROOT_URLCONF = "portfolio.urls"
 
