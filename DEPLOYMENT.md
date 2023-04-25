@@ -8,3 +8,13 @@
             `sudo -u www-data stat /home/username/location_to_static_files`
         - ensure www-data has access
             `sudo gpasswd -a www-data username`
+
+# Deploy on AWS Elastic Beanstalk
+- Follow tutorial [Deploying a Django application to Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html)
+
+- **Gotchas:**
+    - Don't forget to manually set environment variables on Elastic Beanstalk Environment Configuration
+        - DJANGO_ALLOWED_HOSTS
+        - DJANGO_SECRET_KEY
+        - DJANGO_SETTINGS_MODULE
+        - DJANGO_STATIC_ROOT
