@@ -155,11 +155,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
-STATIC_ROOT = env.str("DJANGO_STATIC_ROOT", os.path.join(BASE_DIR, "staticfiles/"))
+STATIC_ROOT = env.str("DJANGO_STATIC_ROOT", os.path.join(BASE_DIR, "static/"))
 
 
 MEDIA_URL = "media/"
-MEDIA_ROOT = env.str("DJANGO_MEDIA_ROOT", os.path.join(BASE_DIR, "mediafiles/"))
+MEDIA_ROOT = env.str("DJANGO_MEDIA_ROOT", os.path.join(BASE_DIR, "media/"))
 
 
 # Default primary key field type
