@@ -23,7 +23,7 @@ from django.urls import include, path
 
 urlpatterns = [path("admin/", admin.site.urls), path("", include("pages.urls"))]
 
-if settings.DEBUG:
+if settings.DEBUG and settings.ENVIRONMENT == "development":
     urlpatterns += [
         path("__reload__/", include("django_browser_reload.urls")),
     ]
