@@ -5,9 +5,7 @@ from django.utils import timezone
 from utils.exceptions import HumanReadableError
 from utils.views import RestAPIView
 
-# NOTE: Correct code should be logger = logging.getLogger("contact")
-# NOTE: But for AWS elasticbeanstalk since there are errors in eb, use __name__ instead
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("contact")
 
 
 class ContactMeEmailView(RestAPIView):
