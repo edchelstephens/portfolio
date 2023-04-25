@@ -2,8 +2,8 @@ import os
 
 from .base import *  # noqa
 
-DEBUG = True
-ALLOWED_HOSTS = ["*"]
+DEBUG = False
+ALLOWED_HOSTS = ["146.190.84.249", "localhost"]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")  # noqa
 
