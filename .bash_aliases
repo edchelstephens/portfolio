@@ -18,6 +18,7 @@ alias mkg="pym makemigrations"
 alias mg="pym migrate"
 alias cst="pym collectstatic"
 alias psy="pym shell"
+alias updateapp="cdp && mg && cst --noinput"
 
 # System
 alias sudosystemctl="sudo systemctl"
