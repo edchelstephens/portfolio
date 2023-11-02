@@ -67,7 +67,7 @@ Code Control: git, github, bitbucket
 Development Style: Test Driven Development
 
 ## Devops
-AWS: Elastic Beanstalk, EC2, Route 53, S3, RDS, SES, SNS, IAM, Workmail, Elasticache
+AWS: Elastic Beanstalk, EC2, Amplify, Route 53, S3, RDS, SES, SNS, IAM, Workmail, Elasticache
 
 Google: GCP, Gmail API, Web OAuth Client for Social Login with Gmail, Gmail API, Google Calendar API
 
