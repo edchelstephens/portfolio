@@ -72,8 +72,8 @@ AWS: Elastic Beanstalk, EC2, Route 53, S3, RDS, SES, SNS, IAM, Workmail, Elastic
 Google: GCP, Gmail API, Web OAuth Client for Social Login with Gmail, Gmail API, Google Calendar API
 
 Third Party Integrations:
-    winbooks.be - Accounting software api integration
-    ibanity.com - Payment system integration
+    - winbooks.be - Accounting software api integration
+    - ibanity.com - Payment system integration
 
 
 Platform: Linux Server with Nginx, Gunicorn, uWSGI, Celery, Redis
